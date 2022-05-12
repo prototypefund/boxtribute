@@ -32,6 +32,7 @@ import { GlobalFilter } from "./GlobalFilter";
 import { SelectColumnFilter } from "./SelectColumnFilter";
 import { useNavigate, useParams } from "react-router-dom";
 import IndeterminateCheckbox from "./Checkbox";
+import DatePickerExample from "views/Box/components/DatePickerExample";
 
 type BoxesTableProps = {
   tableData: ProductRow[];
@@ -123,6 +124,7 @@ const BoxesTable = ({ tableData }: BoxesTableProps) => {
   return (
     <>
       <Flex alignItems="center" flexWrap="wrap">
+        <DatePickerExample />
         <GlobalFilter
           globalFilter={globalFilter}
           setGlobalFilter={setGlobalFilter}
